@@ -72,7 +72,7 @@ namespace Hotel.GUI.Clientes
                         };
                         if (manejadorContraseñaCliente.Agregar(pro))
                         {
-                            MessageBox.Show("Usuario Agregado Correctamente", "Usuario", MessageBoxButton.OK, MessageBoxImage.Information);
+                            MessageBox.Show("Usuario Agregado ", "Usuario", MessageBoxButton.OK, MessageBoxImage.Information);
                             LimpiarCajas();
                         }
                         else
