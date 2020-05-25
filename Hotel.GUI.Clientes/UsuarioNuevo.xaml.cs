@@ -77,7 +77,7 @@ namespace Hotel.GUI.Clientes
                         }
                         else
                         {
-                            MessageBox.Show("El usuario no se puede agregar", "Usuario", MessageBoxButton.OK, MessageBoxImage.Error);
+                            MessageBox.Show(" no se puede agregar", "Usuario", MessageBoxButton.OK, MessageBoxImage.Error);
                         }
                     }
                 }
