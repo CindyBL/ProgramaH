@@ -30,6 +30,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MongoDB.Bson, Version=2.10.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MongoDB.Bson.2.10.4\lib\net452\MongoDB.Bson.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -40,11 +44,32 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entidades\Base.cs" />
+    <Compile Include="Entidades\CaracteristicasHabitacion.cs" />
+    <Compile Include="Entidades\ContraseñaAdministrador.cs" />
+    <Compile Include="Entidades\ContraseñaCliente.cs" />
+    <Compile Include="Entidades\ContraseñaRegistro.cs" />
+    <Compile Include="Entidades\DesalojoHabitacion.cs" />
+    <Compile Include="Entidades\OtrosServicios.cs" />
+    <Compile Include="Entidades\RegistroHabitacion.cs" />
+    <Compile Include="Entidades\RegistroHuesped.cs" />
+    <Compile Include="Entidades\TipoHabitaciones.cs" />
+    <Compile Include="Interfaces\IManejadorCaracteristicas.cs" />
+    <Compile Include="Interfaces\IManejadorContraseñaAdministrar.cs" />
+    <Compile Include="Interfaces\IManejadorContraseñaCliente.cs" />
+    <Compile Include="Interfaces\IManejadorContraseñaRegistro.cs" />
+    <Compile Include="Interfaces\IManejadorDesalojo.cs" />
+    <Compile Include="Interfaces\IManejadorGenerico.cs" />
+    <Compile Include="Interfaces\IManejadorOtroServicio.cs" />
+    <Compile Include="Interfaces\IManejadorRegistroHabitacion.cs" />
+    <Compile Include="Interfaces\IManejadorRegistroHuesped.cs" />
+    <Compile Include="Interfaces\IManejadorTipoHabitacion.cs" />
+    <Compile Include="Interfaces\IRepositorio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Entidades\" />
-    <Folder Include="Interfaces\" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

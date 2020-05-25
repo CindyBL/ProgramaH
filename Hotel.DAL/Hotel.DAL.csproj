@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E5B7027A-DA00-4350-88AE-6FC49B381785}</ProjectGuid>
+    <ProjectGuid>{2172FF31-9C75-434C-8BD0-4A7CCC921712}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Hotel.BIZ</RootNamespace>
-    <AssemblyName>Hotel.BIZ</AssemblyName>
+    <RootNamespace>Hotel.DAL</RootNamespace>
+    <AssemblyName>Hotel.DAL</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -44,7 +44,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ManejadorCaracteristicasH.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
