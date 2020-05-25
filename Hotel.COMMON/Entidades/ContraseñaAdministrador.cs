@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Hotel.COMMON.Entidades
 {
-    class ContraseñaAdministrador:Base
+    public class ContraseñaAdministrador:Base
     {
         public string Usuario { get; set; }
         public string Contraseña { get; set; }

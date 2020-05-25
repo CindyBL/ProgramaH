@@ -45,10 +45,40 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ManejadorCaracteristicasH.cs" />
+    <Compile Include="ManejadorContraseñaAdmistracion.cs" />
+    <Compile Include="ManejadorContraseñaClientes.cs" />
+    <Compile Include="ManejadorContraseñaRegistro.cs" />
+    <Compile Include="ManejadorDesalojoH.cs" />
+    <Compile Include="ManejadorOtrosServicios.cs" />
+    <Compile Include="ManejadorRegistroHabitacion.cs" />
+    <Compile Include="ManejadorRegistroHuesped.cs" />
+    <Compile Include="ManejadorTipoHabitacion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Holtel.GUI.Registros\Holtel.GUI.Registros.csproj">
+      <Project>{31260fc4-ac5a-4051-ab0f-0948a6758e78}</Project>
+      <Name>Holtel.GUI.Registros</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hotel.COMMON\Hotel.COMMON.csproj">
+      <Project>{08853b89-ed94-46a1-ac5f-0a7d0fec4d6a}</Project>
+      <Name>Hotel.COMMON</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hotel.DAL\Hotel.DAL.csproj">
+      <Project>{2172ff31-9c75-434c-8bd0-4a7ccc921712}</Project>
+      <Name>Hotel.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hotel.GUI.Administradores\Hotel.GUI.Administradores.csproj">
+      <Project>{7e6d5a19-0224-4287-b902-fcffa36ca312}</Project>
+      <Name>Hotel.GUI.Administradores</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hotel.GUI.Clientes\Hotel.GUI.Clientes.csproj">
+      <Project>{ec2fb002-0290-4069-9345-c8455ee4d29d}</Project>
+      <Name>Hotel.GUI.Clientes</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Hotel.COMMON.Entidades
 {
-    class CaracteristicasHabitacion:Base
+   public class CaracteristicasHabitacion:Base
     {
         public string TipoHabitacion { get; set; }
         public string NCamas { get; set; }

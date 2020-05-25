@@ -1,30 +1,31 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using Hotel.COMMON.Entidades;
 using Hotel.COMMON.Interfaces;
+using System.Linq;
+using MongoDB.Bson;
 
 namespace Hotel.BIZ
 {
-    class ManejadorCaracteristicasH
+    public class ManejadorContraseñaClientes : IManejadorContraseñaCliente
     {
-        IRepositorio<CaracteristicasHabitacion> repositorio;
 
-        public ManejadorCaracteristicasH(IRepositorio<CaracteristicasHabitacion> repo)
+        IRepositorio<ContraseñaCliente> repositorio;
+
+        public ManejadorContraseñaClientes(IRepositorio<ContraseñaCliente> repo)
         {
             repositorio = repo;
         }
 
-        public List<CaracteristicasHabitacion> Listar => repositorio.Read;
+        public List<ContraseñaCliente> Listar => repositorio.Read;
 
-        public bool Agregar(CaracteristicasHabitacion entidad)
+        public bool Agregar(ContraseñaCliente entidad)
         {
             return repositorio.Create(entidad);
         }
 
-        public CaracteristicasHabitacion BuscarPorId(ObjectId id)
+        public ContraseñaCliente BuscarPorId(ObjectId id)
         {
             return Listar.Where(e => e.Id == id).SingleOrDefault();
         }
@@ -34,7 +35,7 @@ namespace Hotel.BIZ
             return repositorio.Delete(id);
         }
 
-        public bool Modificar(CaracteristicasHabitacion entidad)
+        public bool Modificar(ContraseñaCliente entidad)
         {
             return repositorio.Update(entidad);
         }
