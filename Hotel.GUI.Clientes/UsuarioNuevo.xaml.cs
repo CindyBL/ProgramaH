@@ -83,7 +83,7 @@ namespace Hotel.GUI.Clientes
                 }
                 else
                 {
-                    MessageBox.Show("La contraseña no coincide intente de nuevo", "Usuario", MessageBoxButton.OK, MessageBoxImage.Error);
+                    MessageBox.Show("La contraseña no coincide intente lo de nuevo", "Usuario", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
             }
             else
